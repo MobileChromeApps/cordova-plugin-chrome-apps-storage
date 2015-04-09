@@ -5,6 +5,8 @@
 exports.defineAutoTests = function() {
   'use strict';
 
+  require('cordova-plugin-chrome-apps-test-framework.jasmine_helpers').addJasmineHelpers();
+
   var storage_local_items = {};
   var storage_sync_items = {};
 
