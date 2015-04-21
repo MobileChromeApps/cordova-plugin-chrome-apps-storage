@@ -27,14 +27,10 @@
 
 @implementation ChromeStorage
 
-- (CDVPlugin*)initWithWebView:(UIWebView*)theWebView
+- (void)pluginInitialize
 {
-    self = [super initWithWebView:theWebView];
-    if (self) {
-        _executor = [NSOperationQueue  new];
-        [_executor setMaxConcurrentOperationCount:1];
-    }
-    return self;
+    _executor = [NSOperationQueue  new];
+    [_executor setMaxConcurrentOperationCount:1];
 }
 
 - (NSString*) getStorageFileForNamespace:(NSString*)namespace

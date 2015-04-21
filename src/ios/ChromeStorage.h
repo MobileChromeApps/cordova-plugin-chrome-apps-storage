@@ -7,8 +7,6 @@
 
 @interface ChromeStorage : CDVPlugin
 
-- (CDVPlugin*)initWithWebView:(UIWebView*)theWebView;
-
 - (void)get:(CDVInvokedUrlCommand*)command;
 - (void)getBytesInUse:(CDVInvokedUrlCommand*)command;
 - (void)set:(CDVInvokedUrlCommand*)command;
