@@ -192,7 +192,7 @@ StorageArea.prototype.clear = function(callback) {
     exec(win, fail, 'ChromeStorage', 'clear', [self._namespace]);
 };
 
-var Event = require('org.chromium.common.events');
+var Event = require('cordova-plugin-chrome-apps-common.events');
 exports.onChanged = new Event('onChanged');
 
 var local = new StorageArea('local', exports.onChanged);
