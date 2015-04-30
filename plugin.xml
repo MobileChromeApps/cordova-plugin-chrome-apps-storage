@@ -16,7 +16,7 @@
   <repo>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-storage.git</repo>
   <issue>https://github.com/MobileChromeApps/cordova-plugin-chrome-apps-storage/issues</issue>
 
-  <dependency id="cordova-plugin-chrome-apps-common" />
+  <dependency id="cordova-plugin-chrome-apps-common@1" />
 
   <js-module src="storage.js" name="Storage">
     <clobbers target="chrome.storage" />
